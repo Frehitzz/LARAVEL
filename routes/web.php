@@ -10,6 +10,9 @@ Route::get("/about", function () {
     return view("nav.about"); // link to views/nav/about.blade.php
 });
 
-Route::get("/contact", function () {
-    return view("nav.contact");
-});
+// Route::get("/contact", function () {
+//     return view("nav.contact");
+// });
+
+// alternative way
+Route::view("/contact", "nav.contact");
